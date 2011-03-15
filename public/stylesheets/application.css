@@ -8,7 +8,7 @@
 
 /* main layout */
 html{
-	background-color:#fff;
+	background-color:#fff;x
 }
 
 body{
@@ -32,7 +32,7 @@ body{
 	height:120px;
 }	
 	.headerImg h1 a{
-		background:url(../image/logo.png) no-repeat;
+		background:url(../images/logo.png) no-repeat;
 		display: block;
 		width:150px;
 		height:75px;
