@@ -18,7 +18,7 @@ If you wish to run the code on your own, execute the following:
 
 If you want to use our seed data, execute the following:
 
-  > rake db:seed
+    > rake db:seed
   
 It will take a little while.
 
