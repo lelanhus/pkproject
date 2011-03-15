@@ -66,11 +66,14 @@ GEM
       rake (>= 0.8.7)
     haml (3.0.25)
     has_scope (0.5.0)
+    hpricot (0.8.4)
     i18n (0.5.0)
     inherited_resources (1.2.1)
       has_scope (~> 0.5.0)
       responders (~> 0.6.0)
     json_pure (1.5.1)
+    kaminari (0.10.4)
+      rails (>= 3.0.0)
     launchy (0.4.0)
       configuration (>= 0.0.5)
       rake (>= 0.8.1)
@@ -142,7 +145,9 @@ DEPENDENCIES
   factory_girl_rails
   faker
   haml
+  hpricot
   inherited_resources
+  kaminari
   launchy
   rails (= 3.0.5)
   rspec-rails

@@ -10,13 +10,44 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110315173047) do
+ActiveRecord::Schema.define(:version => 20110315184620) do
 
   create_table "bricks", :force => true do |t|
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.text     "descriptions"
+    t.text     "description"
+  end
+
+  create_table "genders", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "mortars", :force => true do |t|
+    t.integer  "species_id"
+    t.integer  "gender_id"
+    t.integer  "state_id"
+    t.float    "mean"
+    t.text     "note"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "brick_id"
+    t.float    "min"
+    t.float    "stdev"
+  end
+
+  create_table "species", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "states", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end

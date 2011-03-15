@@ -1,0 +1,63 @@
+- content_for :header do
+  All Bricks &gt;
+  = @brick.name
+  
+%table#table.data
+  %thead
+    %tr
+      %td.blue{:colspan => "9"}
+        %h3= @brick.name
+    %tr.gray
+      %td Species
+      %td Gender
+      %td.vright State
+      %td{:colspan => "4"} Values
+      %td.vleft Notes
+    %tr
+      %td.vright
+      %td.vright
+      %td.vright
+      %td
+        %em Mean
+      %td
+        %em Min
+      %td
+        %em Max
+      %td
+        %em Units
+      %td.vleft
+  %tbody
+    - @brick.mortars.each do |mortar|
+      %tr
+        %td.vright= mortar.species.name
+        %td.vright= mortar.gender.name
+        %td.vright= mortar.state.name
+        %td= mortar.mean.round(3)
+        %td 0
+        %td= mortar.stdev
+        %td pg/mL
+        %td.vleft= link_to "Read more >>", bricks_path
+
+
+%br/
+%table#table.data
+  %tr.gray
+    %td
+      %h3 Inputs
+    %td
+      %h3 Outputs
+  %tr
+    %td.vright
+      %a{:href => "#"} Input one
+    %td
+      %a{:href => "#"} Output one
+  %tr
+    %td.vright
+      %a{:href => "#"} Input two
+    %td
+      %a{:href => "#"} Output two
+  %tr
+    %td.vright
+      %a{:href => "#"} Input three
+    %td
+      %a{:href => "#"} Output three

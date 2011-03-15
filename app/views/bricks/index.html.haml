@@ -1,6 +1,7 @@
 - content_for :header do
   All Bricks
   
+= paginate @bricks
 - @bricks.each do |brick|
   %h3= link_to brick.name, brick_path(brick)
-  %p= brick.descritpion
+  %p= brick.description

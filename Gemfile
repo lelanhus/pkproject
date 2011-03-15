@@ -4,6 +4,8 @@ gem 'rails', '3.0.5'
 gem 'inherited_resources'
 gem 'devise'
 gem 'haml'
+gem 'hpricot'
+gem 'kaminari'
 
 group :development, :test do
   gem 'rspec-rails'
