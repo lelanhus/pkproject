@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+%html
+  %head
+    %title PKProject
+      = stylesheet_link_tag :all
+      = javascript_include_tag :defaults
+      = csrf_meta_tag
+  %body
+    .bar
+    .wrapper
+      .header
+        %span.headerImg
+          %h1= link_to "", "../index.html"
+        %span.headerLinks
+          %ul
+            %li.first= link_to "About", "#"
+            %li= link_to "Help", "#"
+            %li= link_to "Contact", "#"
+        %span.search
+          <form action="http://www.google.com/cse" id="cse-search-box" class="searchBox"> 
+                       <input type="hidden" name="cx" value="006303564329511420807:yfb1kmigwag" /> 
+                          <input type="hidden" name="ie" value="UTF-8" /> 
+                          <input type="text" name="q" size="20" value="Search pkProject" /> 
+          				<input type="submit" name="Submit" value="Submit" class="submitButton" style="background-color:#eee;" />
+      
+      / End of Header
+      
+      %hr
+      %hr
+      
+      #topText
+        %h1
+          This is what the pkProject is. A lot of confusing things about phyisiology that you would understand if you are a researcher, scientist or student at MIT. Hopefully this will be useful
+          
+      / Start of content
+      #content
+          #buttons.home
+            %ul
+              %li= link_to 'Bricks', '#'
+              %li.indent= link_to 'States', '#'
+              %li.indent= link_to 'Categories', '#'
+              
+      / Start of footer
+      #footer
+        %h6
+          &#169;2010 - The University of Mississippi Medical Center
+        %h6
+          Supported by: NSF EPSCOR, NASA, NIH
+
+
