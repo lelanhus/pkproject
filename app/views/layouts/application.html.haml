@@ -14,6 +14,7 @@
         %span.headerImg
           %h1
             %a{:href => "../index.html"}
+            %span pkProject
         %span.headerLinks
           %ul
             %li{:style => "border:none;"}
@@ -31,17 +32,10 @@
       %hr/
       %hr/
       #topText
-        %h1 This is what the pkProject is. A lot of confusing things about phyisiology that you would understand if you are a researcher, scientist or student at MIT. Hopefully this will be useful.
+        %h1= yield(:header)
       %hr/
       #content
-        #buttons.home
-          %ul
-            %li
-              %a{:href => "all_bricks.html"} Bricks
-            %li.indent
-              %a{:href => "#"} States
-            %li.indent
-              %a{:href => "#"} Categories
+        = yield
       / end of content
       %hr/
       #footer

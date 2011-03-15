@@ -11,6 +11,8 @@ group :development, :test do
   gem 'launchy'
   gem 'database_cleaner'
   gem 'autotest'
+  gem 'faker'
+  gem 'factory_girl_rails'
 end
 
 # Bundle edge Rails instead:

@@ -40,6 +40,10 @@ body{
 		margin-top:25px;
 	}
 	
+	.headerImg h1 span {
+	  display: none;
+	}
+	
 	.headerLinks{
 		margin:50px 0 20px 150px;
 		float:left;
