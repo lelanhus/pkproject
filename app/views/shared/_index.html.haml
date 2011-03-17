@@ -1,0 +1,13 @@
+- content_for :header do
+  All 
+  = resources.first.class.name.pluralize
+  
+= paginate resources
+
+%ul
+  - resources.each do |resource|
+    %li
+      = link_to resource.name, resource
+      - unless resource.description.blank?  
+        .description
+          = resource.description

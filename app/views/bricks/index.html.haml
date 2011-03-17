@@ -1,12 +1,1 @@
-- content_for :header do
-  All Bricks
-  
-= paginate @bricks
-
-%ul
-  - @bricks.each do |brick|
-    %li
-      = link_to brick.name, brick
-      - unless brick.description.blank?  
-        .description
-          = brick.description
+= render 'shared/index', :resources => @bricks
