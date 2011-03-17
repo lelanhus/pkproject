@@ -6,16 +6,13 @@
     %meta{:content => "", :name => "description"}/
     %meta{:content => "", :name => "keywords"}/
     %title Home | PKProject
-    = stylesheet_link_tag :all
+    = stylesheet_link_tag 'application'
   %body
     #bar
     #wrapper
       #header
-        %span.headerImg
-          %h1
-            = link_to "", root_url
-            %span pkProject
-        %span.headerLinks
+        %h1= link_to "pkProject", root_url
+        .headerLinks
           %ul
             %li{:style => "border:none;"}
               %a{:href => "#"} About
@@ -23,7 +20,7 @@
               %a{:href => "#"} Help
             %li
               %a{:href => "#"} Contact Us
-        %span.search
+        .search
           %form#cse-search-box.searchBox{:action => "http://www.google.com/cse"}
             %input{:name => "cx", :type => "hidden", :value => "006303564329511420807:yfb1kmigwag"}/
             %input{:name => "ie", :type => "hidden", :value => "UTF-8"}/
@@ -39,6 +36,6 @@
       / end of content
       %hr/
       #footer
-        %h6 ©2010 - The University of Mississippi Medical Center
-        %h6 Supported by: NSF EPSCOR, NASA, NIH
+        %p ©2010 - The University of Mississippi Medical Center
+        %p Supported by: NSF EPSCOR, NASA, NIH
     / end of wrapper
