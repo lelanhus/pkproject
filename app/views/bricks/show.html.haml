@@ -2,27 +2,8 @@
   All Bricks &gt;
   = @brick.name
   
-= render 'table_data'
+= render 'shared/table_data', :brick => @brick
 
 %br/
-%table#table.data
-  %tr.gray
-    %td
-      %h3 Inputs
-    %td
-      %h3 Outputs
-  %tr
-    %td.vright
-      %a{:href => "#"} Input one
-    %td
-      %a{:href => "#"} Output one
-  %tr
-    %td.vright
-      %a{:href => "#"} Input two
-    %td
-      %a{:href => "#"} Output two
-  %tr
-    %td.vright
-      %a{:href => "#"} Input three
-    %td
-      %a{:href => "#"} Output three
+
+= render 'shared/relationships_table'

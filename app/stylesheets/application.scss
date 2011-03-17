@@ -116,11 +116,18 @@ nav.pagination {
   margin: $line_height 0px;
 }
 
-table#brick_data {
+table {
   border: 1px solid $light_blue;
   border-collapse: collapse;
   text-align: center;
   width: 100%;
+  tr.middle_header {
+    background: #eee;
+    border-bottom: 1px solid $light_blue;
+  }
+}
+
+table#brick_data {
   tr.top_header {
     background: $light_blue;
     text-align: left;
@@ -129,10 +136,7 @@ table#brick_data {
       padding: 5px;
     }
   }
-  tr.middle_header {
-    background: #eee;
-    border-bottom: 1px solid $light_blue;
-  }
+
   tr.bottom_header th {
     font-weight: normal;
   }
@@ -141,6 +145,21 @@ table#brick_data {
   }
   th.notes, td.notes {
     border-left: 1px solid $light_blue;
+  }
+}
+
+table#relationship_data {
+  th, td {
+    padding-left: 10px;
+  }
+  th {
+    font-weight: bold;
+  }
+  tbody {
+    text-align: left;
+    td.source {
+      border-right: 1px solid $light_blue;
+    }
   }
 }
 
