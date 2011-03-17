@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110315184620) do
+ActiveRecord::Schema.define(:version => 20110317193739) do
 
   create_table "bricks", :force => true do |t|
     t.string   "name"
@@ -36,6 +36,7 @@ ActiveRecord::Schema.define(:version => 20110315184620) do
     t.integer  "brick_id"
     t.float    "min"
     t.float    "stdev"
+    t.float    "max"
   end
 
   create_table "species", :force => true do |t|

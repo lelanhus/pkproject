@@ -1,6 +1,10 @@
 Pkproject::Application.routes.draw do
   
-  resources :bricks
+  resources :bricks do 
+    shallow do
+      resources :mortars
+    end
+  end
   
   root :to => 'pages#{home}'
   # The priority is based upon order of creation:

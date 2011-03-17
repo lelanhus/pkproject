@@ -117,6 +117,9 @@ hr {
   height: 1px;
   margin: 5px 0; }
 
+nav {
+  display: block; }
+
 .last {
   margin-right: 0; }
 
@@ -157,12 +160,36 @@ hr {
   #content #buttons.home a {
     display: block;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 2em;
     padding: 2em 0em;
     text-decoration: none; }
   #content #buttons.home a:hover {
     color: #fff;
     background: #b2c6df; }
+
+nav.pagination {
+  margin: 1.571em 0px; }
+
+table#brick_data {
+  border: 1px solid #b2c6df;
+  border-collapse: collapse;
+  text-align: center;
+  width: 100%; }
+  table#brick_data tr.top_header {
+    background: #b2c6df;
+    text-align: left; }
+    table#brick_data tr.top_header th {
+      font-size: 1.25em;
+      padding: 5px; }
+  table#brick_data tr.middle_header {
+    background: #eee;
+    border-bottom: 1px solid #b2c6df; }
+  table#brick_data tr.bottom_header th {
+    font-weight: normal; }
+  table#brick_data th.state, table#brick_data td.state {
+    border-right: 1px solid #b2c6df; }
+  table#brick_data th.notes, table#brick_data td.notes {
+    border-left: 1px solid #b2c6df; }
 
 /* Footer */
 #footer {
