@@ -6,6 +6,7 @@ gem 'devise'
 gem 'haml'
 gem 'hpricot'
 gem 'kaminari'
+gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
 
 group :development, :test do
   gem 'rspec-rails'

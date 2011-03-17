@@ -1,5 +1,7 @@
 Pkproject::Application.routes.draw do
   
+  devise_for :users
+
   resources :bricks do 
     shallow do
       resources :mortars
