@@ -1,2 +1,4 @@
 %h3= link_to brick.name, brick_path(brick)
-%p= brick.description
+
+- unless brick.description.blank?
+  %p= brick.description

@@ -6,6 +6,7 @@ $header_link_border: #00335b;
 $search_box_border: #bdbdbd;
 $link_color: #4971a2;
 $text_color: #bdbdbd;
+$light_gray: #eee;
 
 *{
 	margin:0;
@@ -84,6 +85,14 @@ nav {
     color: $text_color;
   	font-weight: normal;
   	margin: 0;
+  	a {
+  	  color: $text_color;
+  	  text-decoration: none;
+  	}
+  	a:hover {
+  	  color: $link_color;
+  	  text-decoration: underline;
+  	}
   }
 	padding: $line_height;
 }
@@ -122,12 +131,13 @@ table {
   text-align: center;
   width: 100%;
   tr.middle_header {
-    background: #eee;
+    background: $light_gray;
     border-bottom: 1px solid $light_blue;
   }
 }
 
-table#brick_data {
+table#brick_data, table#mortar_data {
+  margin-top: $line_height;
   tr.top_header {
     background: $light_blue;
     text-align: left;
@@ -161,6 +171,12 @@ table#relationship_data {
       border-right: 1px solid $light_blue;
     }
   }
+}
+
+.description{
+  background: $light_gray;
+  margin-top: $line_height;
+  padding: 0.5em 1em;
 }
 
 /* Footer */

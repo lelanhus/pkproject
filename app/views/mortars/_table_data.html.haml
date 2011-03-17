@@ -1,0 +1,29 @@
+%table#mortar_data
+  %thead
+    %tr.top_header
+      %th{:colspan => "8"}= @mortar.brick.name
+    %tr.middle_header
+      %th Gender
+      %th Species
+      %th.state State
+      %th{:colspan => "5"} Values
+    %tr.bottom_header
+      %th
+      %th
+      %th.state
+      %th Min
+      %th Max
+      %th Mean
+      %th Std Dev
+      %th Units
+  
+  %tbody
+    %tr
+      %td= @mortar.species.name
+      %td= @mortar.gender.name
+      %td.state= @mortar.state.name
+      %td= @mortar.min
+      %td= @mortar.max
+      %td= @mortar.mean
+      %td= @mortar.stdev
+      %td pg/mL

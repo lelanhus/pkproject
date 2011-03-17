@@ -1,11 +1,8 @@
 - content_for :header do
   = link_to 'All Bricks', bricks_path 
-  &gt;
-  = @brick.name
-
-- unless @brick.description.blank?  
-  .description
-    = @brick.description
+  &gt; 
+  = link_to @mortar.brick.name, brick_path(@mortar.brick)
+  &gt; Mortar
   
 = render 'table_data'
 

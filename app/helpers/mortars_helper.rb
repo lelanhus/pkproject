@@ -1,0 +1,2 @@
+module MortarsHelper
+end

@@ -7,4 +7,6 @@
   - @bricks.each do |brick|
     %li
       = link_to brick.name, brick
-      .description= brick.description
+      - unless brick.description.blank?  
+        .description
+          = brick.description

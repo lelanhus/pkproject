@@ -150,6 +150,12 @@ nav {
     color: #bdbdbd;
     font-weight: normal;
     margin: 0; }
+    #topText h1 a {
+      color: #bdbdbd;
+      text-decoration: none; }
+    #topText h1 a:hover {
+      color: #4971a2;
+      text-decoration: underline; }
 
 /* Content */
 #content #buttons.home {
@@ -176,21 +182,23 @@ table {
   text-align: center;
   width: 100%; }
   table tr.middle_header {
-    background: #eee;
+    background: #eeeeee;
     border-bottom: 1px solid #b2c6df; }
 
-table#brick_data tr.top_header {
-  background: #b2c6df;
-  text-align: left; }
-  table#brick_data tr.top_header th {
-    font-size: 1.25em;
-    padding: 5px; }
-table#brick_data tr.bottom_header th {
-  font-weight: normal; }
-table#brick_data th.state, table#brick_data td.state {
-  border-right: 1px solid #b2c6df; }
-table#brick_data th.notes, table#brick_data td.notes {
-  border-left: 1px solid #b2c6df; }
+table#brick_data, table#mortar_data {
+  margin-top: 1.571em; }
+  table#brick_data tr.top_header, table#mortar_data tr.top_header {
+    background: #b2c6df;
+    text-align: left; }
+    table#brick_data tr.top_header th, table#mortar_data tr.top_header th {
+      font-size: 1.25em;
+      padding: 5px; }
+  table#brick_data tr.bottom_header th, table#mortar_data tr.bottom_header th {
+    font-weight: normal; }
+  table#brick_data th.state, table#brick_data td.state, table#mortar_data th.state, table#mortar_data td.state {
+    border-right: 1px solid #b2c6df; }
+  table#brick_data th.notes, table#brick_data td.notes, table#mortar_data th.notes, table#mortar_data td.notes {
+    border-left: 1px solid #b2c6df; }
 
 table#relationship_data th, table#relationship_data td {
   padding-left: 10px; }
@@ -200,6 +208,11 @@ table#relationship_data tbody {
   text-align: left; }
   table#relationship_data tbody td.source {
     border-right: 1px solid #b2c6df; }
+
+.description {
+  background: #eeeeee;
+  margin-top: 1.571em;
+  padding: 0.5em 1em; }
 
 /* Footer */
 #footer {
