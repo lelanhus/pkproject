@@ -8,7 +8,7 @@ Pkproject::Application.routes.draw do
     end
   end
   
-  resources :states
+  resources :states, :categories
   
   root :to => 'pages#{home}'
   # The priority is based upon order of creation:
