@@ -19,4 +19,12 @@ class Brick < ActiveRecord::Base
   def sources_and_targets
     self.sources.zip(self.targets)
   end
+  
+  def self.search(search)
+    if search
+      where("bricks.name LIKE ?", "%#{search}")
+    else
+      scoped
+    end
+  end
 end
