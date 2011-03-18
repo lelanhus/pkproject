@@ -11,5 +11,6 @@
 
 %br/
 
-= render 'shared/relationships_table'
+= render 'shared/relationships_table', :resources => @brick.sources
+= render 'shared/relationships_table', :resources => @brick.targets
 

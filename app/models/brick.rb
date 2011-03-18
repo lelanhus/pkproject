@@ -15,4 +15,8 @@ class Brick < ActiveRecord::Base
     end
     return sources
   end
+  
+  def sources_and_targets
+    self.sources.zip(self.targets)
+  end
 end

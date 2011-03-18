@@ -1,21 +1,10 @@
-%table#relationship_data
+%table.relationship_data
   %thead
     %tr.middle_header
       %th Sources
       %th Targets
   %tbody
-    %tr
-      %td.source
-        %a{:href => "#"} Input one
-      %td
-        %a{:href => "#"} Output one
-    %tr
-      %td.source
-        %a{:href => "#"} Input two
-      %td
-        %a{:href => "#"} Output two
-    %tr
-      %td.source
-        %a{:href => "#"} Input three
-      %td
-        %a{:href => "#"} Output three
+  
+    - resources.each do |resource|
+      %tr
+        %td= link_to resource.name, resource
